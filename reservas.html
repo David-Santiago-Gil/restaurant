@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JJ Viscount Restaurant - Reservas</title>
+    <title>Restaurante Moderno - Reservas</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -24,12 +24,34 @@
     <main class="container">
         <section class="reservations" id="reservas">
             <h2 class="section-title">Reservar Mesa</h2>
-            <form action="#" method="post" class="reservation-form">
+            <div class="reservation-info-card card">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20230523/pngtree-an-old-fashioned-telephone-is-on-a-wooden-table-image_2690066.jpg" alt="Teléfono en mesa de restaurante">
+                <div class="info">
+                    <h3>¿Prefieres llamar?</h3>
+                    <p>Puedes contactarnos directamente para reservar tu mesa y confirmar la disponibilidad.</p>
+                    <a href="tel:+123456789" class="phone-link">
+                        <span class="icon">&#9742;</span> +57 (313-3568187)
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <form action="#" method="post" class="reservation-form card">
                 <label for="name">Tu nombre</label>
                 <input type="text" id="name" name="name" required>
 
+                <label for="email">Tu correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Tu número de teléfono</label>
+                <input type="tel" id="phone" name="phone">
+
                 <label for="date">Fecha</label>
                 <input type="date" id="date" name="date" required>
+                
+                <label for="time">Hora</label>
+                <input type="time" id="time" name="time" required>
 
                 <label for="comments">Comentarios</label>
                 <textarea id="comments" name="comments" rows="4"></textarea>
@@ -40,7 +62,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 JJ Viscount Restaurant - Todos los derechos reservados</p>
+        <p>&copy; 2025 Restaurante Moderno - Todos los derechos reservados</p>
     </footer>
 
 </body>
